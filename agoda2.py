@@ -5,10 +5,6 @@ def capi(str1):
         re2 = re1+re
     elif len(str1) % 2 == 0:
         re2 = str1.title()
-        #re2 = str1.capitalize()
-        #re = str1[0].upper()
-        #re1 = str1[1:]
-        #re2 = re+re1
     return print(re2)
 
 str1 = input("Enter:").strip()
