@@ -4,5 +4,5 @@ Sum = sum(numbers)
 print(Sum) 
   
 # start = 10 
-#Sum = sum(numbers, 10) 
-#print(Sum) 
+Sum1 = sum(numbers, 10) 
+print(Sum1) 
