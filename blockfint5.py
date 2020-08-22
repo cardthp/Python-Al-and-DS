@@ -19,12 +19,11 @@ def test(InputValue,WinLotto):
         if value > 1:
             res3[key] = value
     
-    if res3: #check if res == True
+    if res3: #check if res3 == True (Have Value)
         for key, value in res3.items(): 
             print ("Number of win = {} Count of win = {}".format(key, value))
     else:
         print("no number is won more than once")
-
 
 InputValue = input("Enter Value want to find : ").split()
 WinLotto = input("Enter Value win lotto : ").split()
