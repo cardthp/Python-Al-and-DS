@@ -3,11 +3,9 @@ def test(InputValue,WinLotto):
     for i in InputValue:
         if i in WinLotto:
             res.append(i)
-    return res
 
-def bonus(alist): 
-    res2 = {} 
-    for j in alist: 
+    res2 = {}
+    for j in res: 
         if j in res2: 
             res2[j] += 1
         else: 
@@ -20,7 +18,6 @@ def bonus(alist):
 InputValue = input("Enter Value want to find : ").split()
 WinLotto = input("Enter Value win lotto : ").split()
 c = test(InputValue,WinLotto)
-bonus(c) 
 
 #InputValue = [111,222,222,333,333]
 #WinLotto = [222,333]
