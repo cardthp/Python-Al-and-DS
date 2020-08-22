@@ -9,18 +9,18 @@ def test(InputValue,WinLotto):
 
     #a = Counter(res)
     for j in res: 
-        if j in res3: 
-            res3[j] += 1
+        if j in res2: 
+            res2[j] += 1
         else: 
-            res3[j] = 1
+            res2[j] = 1
 
     #for key,value in a.items():
-    for key,value in res3.items():
+    for key,value in res2.items():
         if value > 1:
-            res2[key] = value
+            res3[key] = value
     
-    if res2: #check if res == True
-        for key, value in res2.items(): 
+    if res3: #check if res == True
+        for key, value in res3.items(): 
             print ("Number of win = {} Count of win = {}".format(key, value))
     else:
         print("no number is won more than once")
