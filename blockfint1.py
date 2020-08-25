@@ -11,4 +11,3 @@ def solve2(alist):
 alist = [5,7,8,3,5]
 print (solve1(alist))
 print (solve2(alist))
-#a
