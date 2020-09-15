@@ -1,6 +1,5 @@
 def isinstring(str1):
     a = "card"
-    #a = list("card")
     ind = 0
     for i in str1:
         if ind == len(a):

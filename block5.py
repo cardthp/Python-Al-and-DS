@@ -1,4 +1,4 @@
-from collections import Counter
+#from collections import Counter
 def test(InputValue,WinLotto):
     res = []
     res2 = {}
@@ -25,6 +25,8 @@ def test(InputValue,WinLotto):
     else:
         print("no number is won more than once")
 
-InputValue = input("Enter Value want to find : ").split()
-WinLotto = input("Enter Value win lotto : ").split()
+InputValue = [int(item) for item in input("Enter Value want to find : ").split()] 
+WinLotto = [int(item) for item in input("Enter Value win lotto : ").split()] 
+#InputValue = input("Enter Value want to find : ").split()
+#WinLotto = input("Enter Value win lotto : ").split()
 test(InputValue,WinLotto)

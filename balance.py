@@ -20,3 +20,4 @@ def check(myStr):
 print(check("{()}"))
 print(check("{[]{()}}"))
 print(check("[{}{})(]"))
+print(check("()"))

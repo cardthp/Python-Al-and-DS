@@ -6,5 +6,5 @@ def countw(word):
             count += 1
     return count
 
-#print(countw('saveChangesInTheEditor'))
-print(countw(list('saveChangesInTheEditor')))
+print(countw('saveChangesInTheEditor'))
+#print(countw(list('saveChangesInTheEditor')))
