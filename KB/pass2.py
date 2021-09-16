@@ -46,7 +46,7 @@ def solutions(S, C):
     return res
           
 
-S="id,age\n1,23\n2,24"
-C="age"
+x="id,age\n1,23\n2,24"
+y="age"
 
-print(solutions(S,C))
+print(solutions(x,y))
