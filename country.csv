@@ -1,4 +1,4 @@
-ID,Country,City,Contrcnt
+CustomerID,Country,City,Contrcnt
 1,Thailand,Bangkok,2
 1,Thailand,Bangkok,3
 2,Thailand,Bangkok,3
@@ -6,3 +6,4 @@ ID,Country,City,Contrcnt
 4,Spain,Mad,20
 5,France,Paris,50
 6,Japan,Tokyo,50
+7,Germany,Berlin,0
