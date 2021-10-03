@@ -1,11 +1,13 @@
+import requests
+import mysql.connector
 import pandas as pd
 
 #mysql
 base1 = mysql.connector.connect(
-    host = "",
-    database
-    user 
-    passw
+    host = "db",
+    database = "ri_db",
+    user = "test",
+    password = ""
 )
 
 sql = "SELECT * FROM currency"
@@ -15,14 +17,14 @@ result = cursor.fetchall()
 table = pd.DataFrame(result)
 
 #API
-response = requests.get(url)
+response = requests.get('http://localhost/marketPurchase')
 response = response.json()
 timestamp = int(response['timestamp']) #2021-01-01
 product = int(response['product']) #1001
 
 table = pd.read_csv("test2.csv")
-result2 = table[table['timestamp'] <= 7]
-# result2 = table[table['timestamp'] <= timestamp]
+#result2 = table[table['timestamp'] <= 7]
+result2 = table[table['timestamp'] <= timestamp]
 result3 = result2['timestamp'].max()
 result4 = table[table['timestamp'] == result3]
 result5 = result4['price'].values[0]
