@@ -8,6 +8,7 @@ response = response.json()
 timestamp = int(response['timestamp']) #2021-01-01
 productprice = int(response['productPrice']) #1001
 
+#connect my sql
 cnx = mysql.connector.connect(
     host = "db",
     database = "ri_db",
@@ -15,17 +16,15 @@ cnx = mysql.connector.connect(
     password = ""
 )
 
-cursor = cnx.cursor()
-sql = "SELECT * FROM currency"
+cursor = cnx.cursor() #cursor means you can execute operations such as SQL statements
+cursor.execute("SELECT * FROM currency")
 
-cursor.execute(sql)
-
-result = cursor.fetchall()
+result = cursor.fetchall() #call data to show
 
 sql_dict = {int(n[0]):int(n[1]) for n in result}
 timestamp_list = [int(n[0]) for n in result]
 
-for i in range(len(timestamp_list)) :
+for i in range(len(timestamp_list)) : #this step for find current exchange (lasted timestamp)
     if timestamp == timestamp_list[i] :
         exchange = sql_dict[timestamp_list[i]]
         break

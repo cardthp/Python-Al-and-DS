@@ -1,6 +1,6 @@
-#1
 # Write a function, which checks that provided string is palindrome.
 
+# Solution 1
 # AABBAA - true
 # AAA - true
 # ABB - false (BAA)
@@ -12,16 +12,14 @@ def res1(a):
     rev = a[::-1] # 123 -> 321 , 123 != 321
 
     if a == rev:
-        #return print("true")
         return True
     else:
-        #return print("false")
         return False
     
 print(res1("AABBAA"))   
 
 
-#2
+# Solution 2
 # AABBAA, [A, A, B, B, A, A]
 #          ^              ^
 #             ^        ^
@@ -36,3 +34,16 @@ def res2(a):
             return True
         
 print(res2("ABBA"))
+
+
+# Solution 3 >> Recommand
+def res3(a):
+    start = 0
+    end = len(a)-1
+    while start < end:
+        if a[start] == a[end] :
+            return True
+        else:
+            return False
+        
+print(res3("ABBA"))

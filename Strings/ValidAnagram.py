@@ -24,3 +24,8 @@ def isAnagram(s, t):
 
 
 print(isAnagram('anagram','nagaram'))
+
+
+def validana2(a,b):
+    return sorted(a) == sorted(b)
+print(validana2('anagram','nagaram'))

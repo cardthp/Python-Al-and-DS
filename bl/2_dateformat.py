@@ -11,3 +11,10 @@ date_dt3 = datetime.strptime(date_str3, '%m-%d-%Y')
 print(date_dt1)
 print(date_dt2)
 print(date_dt3)
+
+#if don't need timestamp
+print(date_dt1.strftime('%m/%d/%Y'))
+
+
+#input = '10 October 2012'
+#date_str1 = input("Enter day month year :")
