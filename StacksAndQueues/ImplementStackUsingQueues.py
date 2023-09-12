@@ -24,9 +24,10 @@ class MyStack:
         return len(self.q) == 0
 
 
-# Your MyStack object will be instantiated and called as such:
-# obj = MyStack()
-# obj.push(x)
-# param_2 = obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.empty()
+# Explanation
+# MyStack myStack = new MyStack();
+# myStack.push(1); [1]
+# myStack.push(2); [1 2]
+# myStack.top(); // return 2 [1 2]
+# myStack.pop(); // return 2 [1 2] #normally it will return 1 but we > [2 1] for return 2
+# myStack.empty(); // return False

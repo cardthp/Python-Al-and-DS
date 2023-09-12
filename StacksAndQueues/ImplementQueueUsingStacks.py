@@ -31,9 +31,10 @@ class MyQueue:
         return not self.s1
 
 
-# Your MyQueue object will be instantiated and called as such:
-# obj = MyQueue()
-# obj.push(x)
-# param_2 = obj.pop()
-# param_3 = obj.peek()
-# param_4 = obj.empty()
+# Explanation
+# MyQueue myQueue = new MyQueue();
+# myQueue.push(1); // queue is: [1]
+# myQueue.push(2); // queue is: [1, 2] (leftmost is front of the queue)
+# myQueue.peek(); // return 1
+# myQueue.pop(); // return 1, queue is [2]
+# myQueue.empty(); // return false

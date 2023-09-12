@@ -42,8 +42,10 @@ def res3(a):
     end = len(a)-1
     while start < end:
         if a[start] == a[end] :
-            return True
+            start+=1
+            end-=1
         else:
             return False
+    return True
         
 print(res3("ABBA"))

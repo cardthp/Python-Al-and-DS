@@ -6,9 +6,9 @@ class StackWithTwo:
         self.CAPACITY = CAPACITY
         self.arr = []
 
-    def pushFirst(self, arg):
+    def pushFirst(self, n):
         if len(self.arr) < self.CAPACITY // 2:
-            self.arr.insert(0, arg) #insert to left side and that array is empty (normally insert to right side)
+            self.arr.insert(0, n) #insert to left side and move already array to right+1 (normally insert to right side)
         else:
             print("Stack overflow")
 
@@ -19,9 +19,9 @@ class StackWithTwo:
             print("Stack underflow")
             return None
 
-    def pushSecond(self, arg):
+    def pushSecond(self, n):
         if len(self.arr) < self.CAPACITY // 2:
-            self.arr.append(arg)
+            self.arr.append(n)
         else:
             print("Stack overflow")
 
@@ -34,9 +34,9 @@ class StackWithTwo:
 
 def main():
     s = StackWithTwo(10)
-    s.pushFirst(1)  #left side
-    s.pushFirst(2)  #left side
-    s.pushSecond(3) #right side
+    s.pushFirst(1)  #left side  [1 x x x x x x x x x]
+    s.pushFirst(2)  #left side  [2 1 x x x x x x x x]
+    s.pushSecond(3) #right side [2 1 x x x x x x x 3]
     print(s.popFirst())  # 2
     print(s.popSecond()) # 3
     print(s.popFirst())  # 1
