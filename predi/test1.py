@@ -1,5 +1,5 @@
 import re
-data1 = open('aa.txt','r')
+data1 = open('predi/aa.txt','r')
 
 # for n in data1:
     # a = n.strip()
@@ -47,7 +47,7 @@ for i in data1:
     # 6
     # 5
     # 2
-    #list_float_num
+    #location_float
     # [1]
     # [1, 3]
     # [1]
@@ -67,5 +67,11 @@ for i in data1:
     #         print(dict_collect[cur],cur)
 
     #if key in curren:
+            
+    #dict_collect
+    # {'USD': 100.0}
+    # {'USD': 700.0}
+    # {'USD': 300.56}
+
     for key,value in dict_collect.items():
         print(value,key)

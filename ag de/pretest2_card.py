@@ -30,7 +30,7 @@ country_singedin2 = country_singedin['CONTRCNT'].max()
 country_singedin3 = country_singedin[country_singedin['CONTRCNT'] == country_singedin2]
 country_singedin_sorted = country_singedin3.sort_values(by=['COUNTRY'], ascending=False)
 country_singedin_sorted_restindex = country_singedin_sorted.reset_index()
-for i, row in country_singedin_sorted_restindex.iterrows():
+for i, row in country_singedin_sorted_restindex.iterrows(): #iterrows means take to for loop
     if i == 0:
         print("{} ({} contracts)".format(row['COUNTRY'],row['CONTRCNT']))
 

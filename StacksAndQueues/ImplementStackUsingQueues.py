@@ -1,6 +1,6 @@
 # 225. Implement Stack using Queues
 # >> https://www.youtube.com/watch?v=rW4vm0-DLYc
-# >> ใช้ Queue เป็น AL หลัก  ทำให้เวลาเอาเข้าด้านขวาออกด้านซ้าย (เข้าออกฝั่งตรงข้าม)
+# >> ใช้ Queue เป็น AL หลัก ทำให้เวลาเอาเข้าด้านขวาออกด้านซ้าย (เข้าออกฝั่งตรงข้าม)
 
 from collections import deque
 class MyStack:

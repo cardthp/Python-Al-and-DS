@@ -1,4 +1,4 @@
-# 15. 3Sum (Medium)
+# 15. 3Sum (Medium) >> Two Pointer
 # Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Explanation: 
 # nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
 # nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
@@ -10,11 +10,11 @@
 
 def threeSum(nums):
     res = []
-    nums.sort()
+    nums.sort() #[-4,-1,-1,0,1,2]
 
     for i,value in enumerate(nums):
         if i > 0 and value == nums[i-1]: #เช็คกรณีค่าเท่ากันเช่น 1/1 หรือ -1/-1 ค่าที่ได้จะซ้ำเดิม (List จะซ้ำ โจทย์คือห้ามซ้ำ)
-            continue
+            continue #คือให้ข้ามไปเลย
 
         left = i+1
         right = len(nums)-1

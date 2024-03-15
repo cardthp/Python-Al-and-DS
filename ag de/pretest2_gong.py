@@ -59,7 +59,7 @@ country_singedin = df[['Country','Contrcnt']].groupby('Country').sum().reset_ind
 country_singedin2 = df['Contrcnt'].max()
 country_singedin3 = country_singedin[country_singedin['Contrcnt'] == country_singedin2]
 country_singedin_sorted = country_singedin3.sort_values(by=['Country'], ascending=False)
-for _, row in country_singedin_sorted.iterrows():
+for _, row in country_singedin_sorted.iterrows(): #iterrows means take to for loop
     print("Country {}: No. of Contrcnt: {}".format(row['Country'],row['Contrcnt']))
 
 #5 How many unique City has customer least 1
